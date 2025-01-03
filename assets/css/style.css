@@ -1106,20 +1106,25 @@ body{
   margin: 0 0 0 68px;
 }
 
-.contact .info-box .social-links {
+/* .contact .info-box .social-links {
   margin: 5px 0 0 68px;
   display: flex;
-}
+} */
 
-.contact .info-box .social-links a {
+ .social-links  i{
   font-size: 24px;
-  padding: 10px;
+  padding: 18px 12px;
   display: inline-block;
   background-color: #15bb62;
   border-radius: 50%;
   color: #fff;
-  line-height: 1;
+  line-height: 0;
   margin-right: 12px;
+  transition: 0.3s;
+}
+.social-links  i:hover{
+  background-color: #fff;
+  color: #15bb62;
   transition: 0.3s;
 }
 
@@ -1263,13 +1268,17 @@ body{
     letter-spacing: 1px;
 }
 
-/* .footer-social-links a:hover {
+.footer-social-links i {
     background:  #15bb62 !important;
-    border: 0;
-} */
-.footer-social-links>a:hover, i:hover{
-  background-color: #18d26e !important;
-  color: white !important;
+    color: #fff !important;
+    padding: 12px 13px !important;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.footer-social-links i:hover {
+  background:  #fff !important;
+  color: #15bb62 !important;
+  transition: all 0.3s;
 }
 .text-secondary{
   color: #15bb62 !important;
