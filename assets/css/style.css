@@ -899,9 +899,13 @@ body{
 
 /* General Package Styles */
 .card-body {
-  background: #272727;
+  background: #272727; /* Keep the blackish background */
   border-radius: 26px;
   padding: 60px 42px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures content alignment */
+  height: 100%; /* Full height for consistent sizing */
 }
 
 .card-body > a > i {
@@ -917,30 +921,30 @@ body{
 
 .card-body h3 {
   font-family: 'Poppins', sans-serif;
-  color: #18d26e;
+  color: #18d26e; /* Accent green */
   font-weight: 700;
   font-size: 26px;
 }
 
 .card-body p {
   font-family: 'Poppins', sans-serif;
-  color: #d8d8d8;
+  color: #d8d8d8; /* Light gray */
   font-weight: 400;
   font-size: 15px;
 }
 
 .card-body span {
   font-family: 'Poppins', sans-serif;
-  color: #d8d8d8;
+  color: #d8d8d8; /* Light gray */
   font-weight: 400;
   font-size: 15px;
   margin-left: 5px;
-  line-height: 35px;
+  line-height: 25px;
 }
 
 .choose-btn a {
   padding: 6px 25px;
-  background-color: #18d26e;
+  background-color: #18d26e; /* Accent green */
   border-radius: 24px;
   color: #fff;
   font-weight: 700;
@@ -949,11 +953,12 @@ body{
 
 .full-card {
   position: relative;
+  height: 100%; /* Ensure uniform height for all cards */
 }
 
 .full-card .card-body:hover {
   transform: translateY(-30px);
-  background-color: #18d26e;
+  background-color: #18d26e; /* Accent green on hover */
   transition: all linear 0.3s;
 }
 
@@ -961,13 +966,13 @@ body{
 .pack-card .full-card:hover .card-body h3,
 .pack-card .full-card:hover .card-body p,
 .pack-card .full-card:hover .card-body span {
-  color: #fff;
+  color: #fff; /* White text on hover */
   transition: all linear 0.3s;
 }
 
 .pack-card .full-card:hover .card-body .choose-btn a {
-  background-color: #fff;
-  color: #15bb62;
+  background-color: #fff; /* White button on hover */
+  color: #15bb62; /* Dark green text */
   transition: all linear 0.3s;
 }
 
@@ -982,7 +987,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all linear .3s;
+  transition: all linear 0.3s;
   border-radius: 20px;
 }
 
