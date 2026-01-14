@@ -2,247 +2,252 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio || Arif</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
-    rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="assets/images/logo/fav-icon.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio || Arif</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/logo/fav-icon.jpg">
 
-  <link rel="stylesheet" href="assets/vendor/owlCarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/vendor/owlCarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/vendor/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendor/owlCarousel/owl.theme.default.min.css">
 
-  <link rel="stylesheet" href="assets/css/all.css">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
-  <!-- navigation part start -->
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-bg glass-navbar sticky-top">
-    <div class="container-fluid">
-      <div class="logo ms-5">
-        <a href="index.html">
-          <!-- <p>ARTech<span class="text-secondary">24 Solution</span> </p> -->
-          <img src="assets/images/logo/arif.png" alt="" class="img-fluid w-50">
-        </a>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="product.html">Product</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Service</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Projects</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- navigation part end -->
-
- 
-
- <section id="contact" class="contact-section py-5">
-    <div class="container">
-        <div class="section-header-about mb-5 text-center">
-            <h2 class="d-inline-block">Contact Me</h2>
-            <p class="text-white-50 mt-3">Let's build something amazing together. Reach out via form or social channels.</p>
-        </div>
-
-        <div class="row g-4">
-            <div class="col-lg-5">
-                <div class="row g-3">
-                    <div class="col-md-12">
-                        <div class="info-card">
-                            <div class="icon-circle"><i class="bx bx-map"></i></div>
-                            <div class="info-text">
-                                <h3>My Address</h3>
-                                <p>Adabor-1, Dhaka, Bangladesh</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="info-card">
-                            <div class="icon-circle"><i class="bx bx-envelope"></i></div>
-                            <div class="info-text">
-                                <h3>Email Me</h3>
-                                <p>mharif0027@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="info-card">
-                            <div class="icon-circle"><i class="bx bx-phone-call"></i></div>
-                            <div class="info-text">
-                                <h3>Call Me</h3>
-                                <p>+880 18 7214 7477</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="info-card">
-                            <div class="icon-circle"><i class="bx bx-share-alt"></i></div>
-                            <div class="info-text">
-                                <h3>Social Profiles</h3>
-                                <div class="social-links-container mt-2">
-                                    <a href="https://www.facebook.com/Arif5441" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://github.com/arif5441" target="_blank"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.linkedin.com/in/arif5441/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-7">
-                <div class="contact-form-wrapper">
-                    <form id="contactForm" action="{{ route('send-message') }}" method="POST" class="modern-form">
-                        <!-- @csrf -->
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea name="message" class="form-control" id="message" style="height: 150px" placeholder="Message" required></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <button type="submit" class="btn-submit w-100">
-                                    <span>Send Message</span>
-                                    <i class="fas fa-paper-plane ms-2"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-  <!-- Footer Start -->
-  <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s"       style="background-color: #1a1a1a !important; margin-top: 20px;">
-    <div class="container pt-5 pb-4">
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6 footer-head">
-                <a href="index.html" style="margin-left: -10px;">
-                    <img src="assets/images/logo/arif.png" alt="" class="img-fluid w-50">
+    <!-- navigation part start -->
+    <nav class="navbar navbar-expand-lg navbar-dark glass-navbar sticky-top">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/images/logo/arif.png" alt="Arif Logo" class="nav-logo">
                 </a>
-                <p class="mt-4 text-light">Explore my portfolio to witness the intersection of innovation and
-                    expertise. Let's
-                    transform ideas into reality!</p>
-                <div class="d-flex footer-social-links">
-                    <a href="https://www.facebook.com/Arif5441" target="_blank"><i
-                            class="fab fa-facebook-f text-secondary"></i></a>
-                    <a href="https://github.com/arif5441" target="_blank"><i
-                            class="fab fa-github text-secondary"></i></a>
-                    <a href="https://www.linkedin.com/in/arif5441/" target="_blank"><i
-                            class="fab fa-linkedin-in text-secondary"></i></a>
-                    <a href="https://x.com/arif_5441?t=5QKnsSOiu--hH7HU9sVCMA&s=09" target="_blank"><i
-                            class="fab fa-twitter text-secondary"></i></a>
-                </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <a href="#" class="h3 text-secondary">Short Link</a>
-                <div class="mt-4 d-flex flex-column short-link">
-                    <a href="about.html" class="mb-2 text-white"><i
-                            class="fas fa-angle-right text-secondary me-2"></i>About
-                        us</a>
-                    <a href="contact.html" class="mb-2 text-white"><i
-                            class="fas fa-angle-right text-secondary me-2"></i>Contact
-                        us</a>
-                    <a href="services.html" class="mb-2 text-white"><i
-                            class="fas fa-angle-right text-secondary me-2"></i>Our
-                        Services</a>
-                    <a href="portfolio.html" class="mb-2 text-white"><i
-                            class="fas fa-angle-right text-secondary me-2"></i>Our
-                        Projects</a>
-                    <!-- <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Latest Blog</a> -->
-                </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline-success ms-lg-4 d-none d-lg-block">Hire Me</a>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <a href="#" class="h3 text-secondary">Help Link</a>
-                <div class="mt-4 d-flex flex-column help-link">
-                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms
-                        Of use</a>
-                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy
-                        Policy</a>
-                    <a href="" class="mb-2 text-white"><i
-                            class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
-                    <a href="" class="mb-2 text-white"><i
-                            class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
-                    <a href="" class="mb-2 text-white"><i
-                            class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
-                </div>
+        </div>
+    </nav>
+    <!-- navigation part end -->
+
+    <!-- contact section start -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="section-header-about mb-5 text-center">
+                <h2 class="d-inline-block">Contact Me</h2>
+                <p class="text-white-50 mt-3">Let's build something amazing together. Reach out via form or social
+                    channels.</p>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <a href="#" class="h3 text-secondary">Contact Us</a>
-                <div class="text-white mt-4 d-flex flex-column contact-link">
-                    <a href="#" class="pb-3 text-light border-bottom border-primary"><i
-                            class="fas fa-map-marker-alt text-secondary me-2"></i> Adabor-1, Dhaka, BanglaDesh</a>
-                    <a href="#" class="py-3 text-light border-bottom border-primary"><i
-                            class="fas fa-phone-alt text-secondary me-2"></i> +018 7214 7477</a>
-                    <a href="#" class="py-3 text-light border-bottom border-primary"><i
-                            class="fas fa-envelope text-secondary me-2"></i> mharif0027@gmail.com</a>
+
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <div class="info-card">
+                                <div class="icon-circle"><i class="bx bx-map"></i></div>
+                                <div class="info-text">
+                                    <h3>My Address</h3>
+                                    <p>Adabor-1, Dhaka, Bangladesh</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="info-card">
+                                <div class="icon-circle"><i class="bx bx-envelope"></i></div>
+                                <div class="info-text">
+                                    <h3>Email Me</h3>
+                                    <p>mharif0027@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="info-card">
+                                <div class="icon-circle"><i class="bx bx-phone-call"></i></div>
+                                <div class="info-text">
+                                    <h3>Call Me</h3>
+                                    <p>+880 18 7214 7477</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="info-card">
+                                <div class="icon-circle"><i class="bx bx-share-alt"></i></div>
+                                <div class="info-text">
+                                    <h3>Social Profiles</h3>
+                                    <div class="social-links-container mt-2">
+                                        <a href="https://www.facebook.com/Arif5441" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a href="https://github.com/arif5441" target="_blank"><i
+                                                class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/arif5441/" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" action="{{ route('send-message') }}" method="POST" class="modern-form">
+                            <!-- @csrf -->
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Name"
+                                            required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" name="email" class="form-control" id="email"
+                                            placeholder="Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" name="subject" class="form-control" id="subject"
+                                            placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea name="message" class="form-control" id="message" style="height: 150px"
+                                            placeholder="Message" required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn-submit w-100">
+                                        <span>Send Message</span>
+                                        <i class="fas fa-paper-plane ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <hr class="text-light mt-5 mb-4">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-start">
-                <span class="text-light"><a href="#" class="text-secondary"><i
-                            class="fas fa-copyright text-secondary me-2"></i>Arif</a>, All right reserved.</span>
+    </section>
+    <!-- contact section end -->
+
+    <!-- ======= Footer Section ======= -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-brand">
+                        <a href="index.html">
+                            <img src="assets/images/logo/arif.png" alt="Arif Logo" class="footer-logo mb-4">
+                        </a>
+                        <p class="footer-desc">
+                            Architecting robust software solutions and high-performance web applications with a focus on
+                            scalability
+                            and user experience.
+                        </p>
+                        <div class="social-links d-flex mt-4">
+                            <a href="https://www.facebook.com/Arif5441" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://github.com/arif5441" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/arif5441/" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://x.com/arif_5441" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Short Links</h4>
+                    <ul class="footer-links list-unstyled mt-4">
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Me</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="portfolio.html"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-links list-unstyled mt-4">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Use</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Support Help</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Contact Me</h4>
+                    <div class="footer-contact mt-4">
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Adabor-1, Dhaka, Bangladesh</span>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+880 18 7214 7477</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>mharif0027@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 text-center text-md-end">
-                <span class="text-light">Designed By<a href="" class="text-secondary"> M.H.ARIF</a></span>
+
+            <hr class="footer-divider mt-5 mb-4">
+
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <p class="mb-0">© 2024 <span class="text-accent">Arif</span>. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0">Developed by <a href="#" class="designer-link">M.H.ARIF</a></p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- Footer End -->
+    </footer>
+    <!-- End Footer Section -->
 
 </body>
 
